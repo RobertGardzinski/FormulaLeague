@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+</head>
+
+<body *ngFor="let tour of tours; let tourIndex = index">
+
+
+<div id="container" *ngIf="tourIndex == tourIter">
+
+  <div id="map">
+    <img src="../app/StaticTrackWithPoles.jpg" style="position: absolute ;width: 1280px; height: 960px"/>
+    <span *ngIf="tourIter==0">
+      <div
+        [ngStyle]="{'top':fields[tours[0].players[0].status.field].y/2-offsetY+'px', 'left':fields[tours[0].players[0].status.field].x/2-offsetX+'px', 'position':'absolute'}">
+        <img src="../app/helmet_{{tours[0].players[0].color}}.png"
+             style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+             [ngStyle]="{'top':'300px', 'left':'230px'}"/>
+      </div>
+      <div
+        [ngStyle]="{'top':fields[tours[0].players[1].status.field].y/2-offsetY+'px', 'left':fields[tours[0].players[1].status.field].x/2-offsetX+'px', 'position':'absolute'}">
+        <img src="../app/helmet_{{tours[0].players[1].color}}.png"
+             style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+             [ngStyle]="{'top':'300px', 'left':'230px'}"/>
+      </div>
+      <div
+        [ngStyle]="{'top':fields[tours[0].players[2].status.field].y/2-offsetY+'px', 'left':fields[tours[0].players[2].status.field].x/2-offsetX+'px', 'position':'absolute'}">
+        <img src="../app/helmet_{{tours[0].players[2].color}}.png"
+             style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+             [ngStyle]="{'top':'300px', 'left':'230px'}"/>
+      </div>
+      <div
+        [ngStyle]="{'top':fields[tours[0].players[3].status.field].y/2-offsetY+'px', 'left':fields[tours[0].players[3].status.field].x/2-offsetX+'px', 'position':'absolute'}">
+        <img src="../app/helmet_{{tours[0].players[3].color}}.png"
+             style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+             [ngStyle]="{'top':'300px', 'left':'230px'}"/>
+      </div>
+    </span>
+    <span *ngIf="tourIter>0">
+        <div *ngIf="tours[tourIter].players.length > 0"
+             [ngStyle]="{'top':topString[0], 'left':leftString[0], 'position':'absolute'}">
+          <img src="../app/helmet_{{tours[tourIter].players[0].color}}.png"
+               style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+               [ngStyle]="{'top':'300px', 'left':'230px'}"/>
+        </div>
+        <div *ngIf="tours[tourIter].players.length > 1"
+             [ngStyle]="{'top':topString[1], 'left':leftString[1], 'position':'absolute'}">
+          <img *ngIf="!crashField[0] || tours[tourIter].players[playerIter].moves.length > moveIter"
+               src="../app/helmet_{{tours[tourIter].players[1].color}}.png"
+               style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+               [ngStyle]="{'top':'300px', 'left':'230px'}"/></div>
+      <div *ngIf="tours[tourIter].players.length > 1"
+           [ngStyle]="{'top':topString[1], 'left':leftString[1], 'position':'absolute'}">
+          <img *ngIf="crashField[0] &&
+              (tours[tourIter].players[1].moves.length == moveIter || playerIter > 1)"
+               src="../app/accident.png"
+               style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+               [ngStyle]="{'top':'300px', 'left':'230px'}"/>
+        </div>
+        <div *ngIf="tours[tourIter].players.length > 2"
+             [ngStyle]="{'top':topString[2], 'left':leftString[2], 'position':'absolute'}">
+          <img *ngIf="!crashField[1] || tours[tourIter].players[playerIter].moves.length > moveIter"
+               src="../app/helmet_{{tours[tourIter].players[2].color}}.png"
+               style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+               [ngStyle]="{'top':'300px', 'left':'230px'}"/></div>
+        <div *ngIf="tours[tourIter].players.length > 2"
+             [ngStyle]="{'top':topString[2], 'left':leftString[2], 'position':'absolute'}">
+          <img *ngIf="crashField[1] &&
+              (tours[tourIter].players[2].moves.length == moveIter || playerIter > 2)"
+               src="../app/accident.png"
+               style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+               [ngStyle]="{'top':'300px', 'left':'230px'}"/>
+        </div>
+        <div *ngIf="tours[tourIter].players.length > 3"
+             [ngStyle]="{'top':topString[3], 'left':leftString[3], 'position':'absolute'}">
+          <img *ngIf="!crashField[2] || tours[tourIter].players[playerIter].moves.length > moveIter"
+               src="../app/helmet_{{tours[tourIter].players[3].color}}.png"
+               style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+               [ngStyle]="{'top':'300px', 'left':'230px'}"/></div>
+      <div *ngIf="tours[tourIter].players.length > 3"
+           [ngStyle]="{'top':topString[3], 'left':leftString[3], 'position':'absolute'}">
+          <img *ngIf="crashField[2] &&
+              (tours[tourIter].players[3].moves.length == moveIter)"
+               src="../app/accident.png"
+               style="width:30px; heigth:30px; margin-left: 0px; margin-top: 0px"
+               [ngStyle]="{'top':'300px', 'left':'230px'}"/>
+        </div>
+    </span>
+  </div>
+
+
+  <div id="players">
+
+    <div id="logo">
+      <img src="../app/logo.png"/>
+    </div>
+    <!--dlugosc {{tours[tourIter].players.length}}-->
+    <div *ngIf="1<=tours[tourIter].players.length" class="player"
+         onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');"
+         [ngStyle]="{'border-color': tours[tourIndex].players[0].color, 'background-color': backgroundActivePlayer[0]}">
+      <div class="playerHeader">
+        <div class="playerPosition">
+        </div>
+        <div class="playerBotName">
+          {{tours[tourIter].players[0]?.personality}}
+        </div>
+      </div>
+      <div class="playerInterface">
+        <div class="playerStory">
+          <div class="playerActionTitle">ACTION:
+          </div>
+          <div class="playerAction">
+            <!--Poprzedzić ifem sprawdzającym, czy to już ostatnia tura, będąca listą zwycięzców-->
+            <div *ngIf="playerIter==0 && tourIter>0 && moveIter == 0" style="text-align: center">
+              {{tours[tourIter].players[0].action[0][2]}} <br/>
+              {{tours[tourIter].players[0].action[1][2]}}
+            </div>
+            <div *ngIf="playerIter==0 && tourIter>0 && moveIter > 0">
+              <div *ngFor="let idx of tours[tourIter].players[0].moves; let i = index">
+                <img *ngIf="moveIter-1 >= i" src="../app/{{tours[tourIter].players[0].moves[i].direction}}.jpg"
+                     [ngStyle]="{'left':arrowX[i]+25+'px', 'position':'absolute', 'width':'35px', 'height':'35px'}"/>
+              </div>
+            </div>
+          </div>
+          <div class="playerReactionTitle">REACTION:
+
+          </div>
+        </div>
+        <div class="playerInfo">
+          <div class="playerSpeed">
+            <div style="width: 40px; height: 40px; float: left;">
+              <img src="../app/speed.png" style="width: 38px; height: 36px;"/>
+            </div>
+            <div style="width: 100px; height: 28px; float: left; margin-left: 12px">
+              {{tours[tourIter].players[0].status.speed}}
+            </div>
+          </div>
+          <div class="playerTires">
+            <div style="width: 40px; height: 40px; float: left;">
+              <img src="../app/tires.png" style="width: 38px; height: 36px;"/>
+            </div>
+            <div style="width: 120px; height: 40px; float: left; margin-left: 12px">
+              x {{tours[tourIter].players[0].status.tires}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="playerReaction">
+        <div
+          *ngIf="playerIter==0 && tourIter>0 && moveIter > 0 && tours[tourIter].players[0].moves.length>0 && tours[tourIter].players[0].moves[moveIter-1].amountOfReaction > 0">
+          <div *ngFor="let idx of arrowX; let i = index">
+            <img *ngIf="reactionIter >= i" src="../app/{{tours[tourIter].players[0].moves[moveIter-1].reaction[i][3]}}"
+                 [ngStyle]="{'left':arrowX[i]+25+'px', 'position':'absolute', 'width':'35px', 'height':'35px'}"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="2<=tours[tourIter].players.length" class="player"
+         onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');"
+         [ngStyle]="{'border-color': tours[tourIndex].players[1].color, 'background-color': backgroundActivePlayer[1]}">
+      <div class="playerHeader">
+        <div class="playerPosition">
+        </div>
+        <div class="playerBotName">
+          {{tours[tourIter].players[1]?.personality}}
+        </div>
+      </div>
+      <div class="playerInterface">
+        <div class="playerStory">
+          <div class="playerActionTitle">ACTION:
+          </div>
+          <div class="playerAction">
+            <div *ngIf="playerIter==1 && tourIter>0 && moveIter == 0" style="text-align: center">
+              {{tours[tourIter].players[1].action[0][2]}} <br/>
+              {{tours[tourIter].players[1].action[1][2]}}
+            </div>
+            <div *ngIf="playerIter==1 && tourIter>0 && moveIter > 0">
+              <div *ngFor="let idx of tours[tourIter].players[1].moves; let i = index">
+                <img *ngIf="moveIter-1 >= i" src="../app/{{tours[tourIter].players[1].moves[i].direction}}.jpg"
+                     [ngStyle]="{'left':arrowX[i]+25+'px', 'position':'absolute', 'width':'35px', 'height':'35px'}"/>
+              </div>
+            </div>
+          </div>
+          <div class="playerReactionTitle">REACTION:
+
+          </div>
+        </div>
+        <div class="playerInfo">
+          <div class="playerSpeed">
+            <div style="width: 40px; height: 40px; float: left;">
+              <img src="../app/speed.png" style="width: 38px; height: 36px;"/>
+            </div>
+            <div style="width: 100px; height: 28px; float: left; margin-left: 12px">
+              {{tours[tourIter].players[1].status.speed}}
+            </div>
+          </div>
+          <div class="playerTires">
+            <div style="width: 40px; height: 40px; float: left;">
+              <img src="../app/tires.png" style="width: 38px; height: 36px;"/>
+            </div>
+            <div style="width: 120px; height: 40px; float: left; margin-left: 12px">
+              x {{tours[tourIter].players[1].status.tires}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="playerReaction">
+        <div
+          *ngIf="playerIter==1 && tourIter>0 && moveIter > 0 && tours[tourIter].players[1].moves.length>0 && tours[tourIter].players[1].moves[moveIter-1]?.amountOfReaction > 0">
+          <div *ngFor="let idx of arrowX; let i = index">
+            <img *ngIf="reactionIter >= i" src="../app/{{tours[tourIter].players[1].moves[moveIter-1].reaction[i][3]}}"
+                 [ngStyle]="{'left':arrowX[i]+25+'px', 'position':'absolute', 'width':'35px', 'height':'35px'}"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="3<=tours[tourIter].players.length" class="player"
+         onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');"
+         [ngStyle]="{'border-color': tours[tourIndex].players[2].color, 'background-color': backgroundActivePlayer[2]}">
+      <div class="playerHeader">
+        <div class="playerPosition">
+        </div>
+        <div class="playerBotName">
+          {{tours[tourIter].players[2]?.personality}}
+        </div>
+      </div>
+      <div class="playerInterface">
+        <div class="playerStory">
+          <div class="playerActionTitle">ACTION:
+          </div>
+          <div class="playerAction">
+            <div *ngIf="playerIter==2 && tourIter>0 && moveIter == 0" style="text-align: center">
+              {{tours[tourIter].players[2].action[0][2]}} <br/>
+              {{tours[tourIter].players[2].action[1][2]}}
+            </div>
+            <div *ngIf="playerIter==2 && tourIter>0 && moveIter > 0">
+              <div *ngFor="let idx of tours[tourIter].players[2].moves; let i = index">
+                <img *ngIf="moveIter-1 >= i" src="../app/{{tours[tourIter].players[2].moves[i].direction}}.jpg"
+                     [ngStyle]="{'left':arrowX[i]+25+'px', 'position':'absolute', 'width':'35px', 'height':'35px'}"/>
+              </div>
+            </div>
+          </div>
+          <div class="playerReactionTitle">REACTION:
+
+          </div>
+        </div>
+        <div class="playerInfo">
+          <div class="playerSpeed">
+            <div style="width: 40px; height: 40px; float: left;">
+              <img src="../app/speed.png" style="width: 38px; height: 36px;"/>
+            </div>
+            <div style="width: 100px; height: 28px; float: left; margin-left: 12px">
+              {{tours[tourIter].players[2].status.speed}}
+            </div>
+          </div>
+          <div class="playerTires">
+            <div style="width: 40px; height: 40px; float: left;">
+              <img src="../app/tires.png" style="width: 38px; height: 36px;"/>
+            </div>
+            <div style="width: 120px; height: 40px; float: left; margin-left: 12px">
+              x {{tours[tourIter].players[2].status.tires}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="playerReaction">
+        <div
+          *ngIf="playerIter==2 && tourIter>0 && moveIter > 0 && tours[tourIter].players[2].moves.length>0 && tours[tourIter].players[2].moves[moveIter-1].amountOfReaction > 0">
+          <div *ngFor="let idx of arrowX; let i = index">
+            <img *ngIf="reactionIter >= i" src="../app/{{tours[tourIter].players[2].moves[moveIter-1].reaction[i][3]}}"
+                 [ngStyle]="{'left':arrowX[i]+25+'px', 'position':'absolute', 'width':'35px', 'height':'35px'}"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="4<=tours[tourIter].players.length" class="player"
+         onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');"
+         [ngStyle]="{'border-color': tours[tourIndex].players[3].color, 'background-color': backgroundActivePlayer[3]}">
+      <div class="playerHeader">
+        <div class="playerPosition">
+        </div>
+        <div class="playerBotName">
+          {{tours[tourIter].players[3]?.personality}}
+        </div>
+      </div>
+      <div class="playerInterface">
+        <div class="playerStory">
+          <div class="playerActionTitle">ACTION:
+          </div>
+          <div class="playerAction">
+            <div *ngIf="playerIter==3 && tourIter>0 && moveIter == 0" style="text-align: center">
+              {{tours[tourIter].players[3].action[0][2]}} <br/>
+              {{tours[tourIter].players[3].action[1][2]}}
+            </div>
+            <div *ngIf="playerIter==3 && tourIter>0 && moveIter > 0">
+              <div *ngFor="let idx of tours[tourIter].players[3].moves; let i = index">
+                <img *ngIf="moveIter-1 >= i" src="../app/{{tours[tourIter].players[3].moves[i].direction}}.jpg"
+                     [ngStyle]="{'left':arrowX[i]+25+'px', 'position':'absolute', 'width':'35px', 'height':'35px'}"/>
+              </div>
+            </div>
+          </div>
+          <div class="playerReactionTitle">REACTION:
+
+          </div>
+        </div>
+        <div class="playerInfo">
+          <div class="playerSpeed">
+            <div style="width: 40px; height: 40px; float: left;">
+              <img src="../app/speed.png" style="width: 38px; height: 36px;"/>
+            </div>
+            <div style="width: 100px; height: 28px; float: left; margin-left: 12px">
+              {{tours[tourIter].players[3].status.speed}}
+            </div>
+          </div>
+          <div class="playerTires">
+            <div style="width: 40px; height: 40px; float: left;">
+              <img src="../app/tires.png" style="width: 38px; height: 36px;"/>
+            </div>
+            <div style="width: 120px; height: 40px; float: left; margin-left: 12px">
+              x {{tours[tourIter].players[3].status.tires}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="playerReaction">
+        <div
+          *ngIf="playerIter==3 && tourIter>0 && moveIter > 0 && tours[tourIter].players[3].moves.length>0 && tours[tourIter].players[3].moves[moveIter-1].amountOfReaction > 0">
+          <div *ngFor="let idx of arrowX; let i = index">
+            <img *ngIf="reactionIter >= i" src="../app/{{tours[tourIter].players[3].moves[moveIter-1].reaction[i][3]}}"
+                 [ngStyle]="{'left':arrowX[i]+25+'px', 'position':'absolute', 'width':'35px', 'height':'35px'}"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div style="background-color: #5bc0de">NAVIGATION:
+      <button *ngIf="!disableNextMove" type="button" (click)="globalIterInc()">Next step!</button>
+      <button *ngIf="disableNextMove" type="button" (click)="globalIterInc()" disabled>Next step!</button>
+      <button *ngIf="!disablePlay" type="button" (click)="start()">Play!</button>
+      <button *ngIf="disablePlay" type="button" (click)="start()" disabled>Playing...</button>
+    </div>
+    <div id="switchMenu">
+      <h3 style="color: lightgray">switchMenu</h3>
+    </div>
+    <div id="spectatorInterface">
+      <table style="width: 500px; height: 100px">
+        <tr *ngIf="tourIter < toursLength-1 && tourIter > 0">
+          <td>Tour:
+          </td>
+          <td>
+            {{tourIter}}
+          </td>
+          <td>
+            <button type="button" (click)="tourIterInc()">Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="tourIterDec()">Previous</button>
+          </td>
+        </tr>
+        <tr *ngIf="tourIter == toursLength - 1">
+          <td>Tour:
+          </td>
+          <td>
+            {{tourIter}}
+          </td>
+          <td>
+            <button type="button" (click)="tourIterInc()" disabled>Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="tourIterDec()">Previous</button>
+          </td>
+        </tr>
+        <tr *ngIf="tourIter == 0">
+          <td>Tour:
+          </td>
+          <td>
+            {{tourIter}}
+          </td>
+          <td>
+            <button type="button" (click)="tourIterInc()">Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="tourIterDec()" disabled>Previous</button>
+          </td>
+        </tr>
+
+        <tr *ngIf="playerIter < playersLength-1 && playerIter > 0">
+          <td>Player:
+          </td>
+          <td>
+            {{playerIter}}
+          </td>
+          <td>
+            <button type="button" (click)="playerIterInc()">Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="playerIterDec()">Previous</button>
+          </td>
+        </tr>
+        <tr *ngIf="playerIter == playersLength - 1">
+          <td>Player:
+          </td>
+          <td>
+            {{playerIter}}
+          </td>
+          <td>
+            <button type="button" (click)="playerIterInc()" disabled>Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="playerIterDec()">Previous</button>
+          </td>
+        </tr>
+        <tr *ngIf="playerIter == 0">
+          <td>Player:
+          </td>
+          <td>
+            {{playerIter}}
+          </td>
+          <td>
+            <button type="button" (click)="playerIterInc()">Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="playerIterDec()" disabled>Previous</button>
+          </td>
+        </tr>
+
+        <tr *ngIf="tours[tourIter].players[playerIter].numberOfMoves == 0">
+          <td>Move:
+          </td>
+          <td>{{moveIter}}</td>
+          <td>
+            <button type="button" (click)="moveIterInc()" disabled>Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="moveIterDec()" disabled>Previous</button>
+          </td>
+        </tr>
+        <tr
+          *ngIf="tours[tourIter].players[playerIter].numberOfMoves > 1 && moveIter > 0 && moveIter < tours[tourIter].players[playerIter].numberOfMoves">
+          <td>Move:
+          </td>
+          <td>{{moveIter}}</td>
+          <td>
+            <button type="button" (click)="moveIterInc()">Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="moveIterDec()">Previous</button>
+          </td>
+        </tr>
+        <tr
+          *ngIf="tours[tourIter].players[playerIter].numberOfMoves > 0 && moveIter == tours[tourIter].players[playerIter].numberOfMoves">
+          <td>Move:
+          </td>
+          <td>{{moveIter}}</td>
+          <td>
+            <button type="button" (click)="moveIterInc()" disabled>Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="moveIterDec()">Previous</button>
+          </td>
+        </tr>
+        <tr *ngIf="tours[tourIter].players[playerIter].numberOfMoves > 0 && moveIter==0">
+          <td>Move:
+          </td>
+          <td>{{moveIter}}</td>
+          <td>
+            <button type="button" (click)="moveIterInc()">Next</button>
+          </td>
+          <td>
+            <button type="button" (click)="moveIterDec()" disabled>Previous</button>
+          </td>
+        </tr>
+
+        <!--<tr-->
+          <!--*ngIf="moveIter>0 && tours[tourIter].players[playerIter].moves[(moveIter-1)].amountOfReaction >= 3 && reactionIter < tours[tourIter].players[playerIter].moves[(moveIter-1)].amountOfReaction - 1 && reactionIter != 0">-->
+          <!--<td>Reaction:-->
+          <!--</td>-->
+          <!--<td>{{reactionIter}}</td>-->
+          <!--<td>-->
+            <!--<button type="button" (click)="reactionIter=reactionIter+1">Next</button>-->
+          <!--</td>-->
+          <!--<td>-->
+            <!--<button type="button" (click)="reactionIter=reactionIter-1">Previous</button>-->
+          <!--</td>-->
+        <!--</tr>-->
+        <!--<tr-->
+          <!--*ngIf="moveIter>0 && tours[tourIter].players[playerIter].moves[(moveIter-1)].amountOfReaction >= 1 && reactionIter == tours[tourIter].players[playerIter].moves[(moveIter-1)].amountOfReaction - 1">-->
+          <!--<td>Reaction:-->
+          <!--</td>-->
+          <!--<td>{{reactionIter}}</td>-->
+          <!--<td>-->
+            <!--<button type="button" (click)="reactionIter=reactionIter+1" disabled>Next</button>-->
+          <!--</td>-->
+          <!--<td>-->
+            <!--<button type="button" (click)="reactionIter=reactionIter-1">Previous</button>-->
+          <!--</td>-->
+        <!--</tr>-->
+        <!--<tr-->
+          <!--*ngIf="moveIter>0 && tours[tourIter].players[playerIter].moves[(moveIter-1)].amountOfReaction >= 1 && reactionIter == 0">-->
+          <!--<td>Reaction:-->
+          <!--</td>-->
+          <!--<td>{{reactionIter}}</td>-->
+          <!--<td>-->
+            <!--<button type="button" (click)="reactionIter=reactionIter+1">Next</button>-->
+          <!--</td>-->
+          <!--<td>-->
+            <!--<button type="button" (click)="reactionIter=reactionIter-1" disabled>Previous</button>-->
+          <!--</td>-->
+        <!--</tr>-->
+
+      </table>
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

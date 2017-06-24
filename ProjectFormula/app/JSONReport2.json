@@ -1,0 +1,4378 @@
+{
+  "tours": [
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 0,
+          "status": {
+            "field": 6,
+            "tires": 28,
+            "speed": 28,
+            "outOfTrack": false
+          },
+          "action": [
+            [],
+            []
+          ],
+          "moves": [
+            {
+              "field": 6,
+              "direction": "DupaBiskupa",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 0,
+          "status": {
+            "field": 4,
+            "tires": 28,
+            "speed": 28,
+            "outOfTrack": false
+          },
+          "action": [
+            [],
+            []
+          ],
+          "moves": [
+            {
+              "field": 4,
+              "direction": "DupaBiskupa",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 0,
+          "status": {
+            "field": 3,
+            "tires": 29,
+            "speed": 29,
+            "outOfTrack": false
+          },
+          "action": [
+            [],
+            []
+          ],
+          "moves": [
+            {
+              "field": 3,
+              "direction": "DupaBiskupa",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 0,
+          "status": {
+            "field": 1,
+            "tires": 29,
+            "speed": 29,
+            "outOfTrack": false
+          },
+          "action": [
+            [],
+            []
+          ],
+          "moves": [
+            {
+              "field": 1,
+              "direction": "DupaBiskupa",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 6,
+            "tires": 28,
+            "speed": 0,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Accelerate by 160kmph",
+              "speed160.jpg"
+            ],
+            [
+              "TIRES",
+              "27",
+              "Lost 1 tires",
+              "tirecost1.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 8,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 10,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 11,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 13,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 1,
+          "status": {
+            "field": 4,
+            "tires": 28,
+            "speed": 0,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "40",
+              "Accelerate by 40kmph",
+              "speed40.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 7,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 2,
+          "status": {
+            "field": 3,
+            "tires": 29,
+            "speed": 0,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "80",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "29",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 5,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 7,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "EVENT",
+                  "-1",
+                  "Player crashed with collision!",
+                  "crash.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 80kmph",
+                  "speed-80.jpg"
+                ],
+                [
+                  "TIRES",
+                  "28",
+                  "Lost 1 tires",
+                  "tirecost1.jpg"
+                ]
+              ],
+              "amountOfReaction": 4
+            }
+          ],
+          "pid": 3
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 2,
+          "status": {
+            "field": 1,
+            "tires": 29,
+            "speed": 0,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "80",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "29",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 4,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 5,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 13,
+            "tires": 27,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "27",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 18,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "DICE",
+                  "1",
+                  "Thrown dice result is 1",
+                  "dice1.jpg"
+                ],
+                [
+                  "TIRES",
+                  "26",
+                  "Lost 1 tires",
+                  "tirecost1.jpg"
+                ]
+              ],
+              "amountOfReaction": 2
+            },
+            {
+              "field": 20,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 21,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 24,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 3,
+          "status": {
+            "field": 7,
+            "tires": 28,
+            "speed": 40,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "120",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 10,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 13,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 18,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 2,
+          "status": {
+            "field": 5,
+            "tires": 28,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "80",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 9,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 11,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 2,
+          "status": {
+            "field": 5,
+            "tires": 29,
+            "speed": 80,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "80",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "29",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 6,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 9,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 3,
+          "status": {
+            "field": 24,
+            "tires": 26,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "120",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "26",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 27,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 30,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 32,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 18,
+            "tires": 28,
+            "speed": 120,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Accelerate by 40kmph",
+              "speed40.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 20,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 23,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 25,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 28,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 1,
+          "status": {
+            "field": 11,
+            "tires": 28,
+            "speed": 80,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "40",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 14,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 9,
+            "tires": 29,
+            "speed": 80,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "29",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 12,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 15,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 16,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 19,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 32,
+            "tires": 26,
+            "speed": 120,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Accelerate by 40kmph",
+              "speed40.jpg"
+            ],
+            [
+              "TIRES",
+              "26",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 35,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 36,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 38,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 41,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 28,
+            "tires": 28,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Accelerate by 40kmph",
+              "speed40.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 31,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 32,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 34,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 37,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 38,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 19,
+            "tires": 29,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Accelerate by 40kmph",
+              "speed40.jpg"
+            ],
+            [
+              "TIRES",
+              "29",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 21,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 24,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 27,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 30,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 33,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 2,
+          "status": {
+            "field": 14,
+            "tires": 28,
+            "speed": 40,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "80",
+              "Accelerate by 40kmph",
+              "speed40.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 18,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 20,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 41,
+            "tires": 26,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "26",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 44,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 47,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 48,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 54,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "DICE",
+                  "3",
+                  "Thrown dice result is 3",
+                  "dice3.jpg"
+                ],
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 160kmph",
+                  "speed-160.jpg"
+                ],
+                [
+                  "TIRES",
+                  "23",
+                  "Lost 3 tires",
+                  "tirecost3.jpg"
+                ]
+              ],
+              "amountOfReaction": 5
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 38,
+            "tires": 28,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 41,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 42,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 45,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 49,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 33,
+            "tires": 29,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "29",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 35,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 37,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 40,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 43,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 20,
+            "tires": 28,
+            "speed": 80,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 21,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 24,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 27,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 29,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 54,
+            "tires": 23,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Accelerate by 160kmph",
+              "speed160.jpg"
+            ],
+            [
+              "TIRES",
+              "22",
+              "Lost 1 tires",
+              "tirecost1.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 57,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 58,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 61,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 64,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 2,
+          "status": {
+            "field": 49,
+            "tires": 28,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "240",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 51,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 53,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "DICE",
+                  "5",
+                  "Thrown dice result is 5",
+                  "dice5.jpg"
+                ],
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 240kmph",
+                  "speed-240.jpg"
+                ],
+                [
+                  "TIRES",
+                  "23",
+                  "Lost 5 tires",
+                  "tirecost5.jpg"
+                ]
+              ],
+              "amountOfReaction": 5
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 43,
+            "tires": 29,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Accelerate by 40kmph",
+              "speed40.jpg"
+            ],
+            [
+              "TIRES",
+              "29",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 46,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 47,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 48,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 54,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 200kmph",
+                  "speed-200.jpg"
+                ],
+                [
+                  "TIRES",
+                  "25",
+                  "Lost 4 tires",
+                  "tirecost4.jpg"
+                ]
+              ],
+              "amountOfReaction": 4
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 6,
+          "status": {
+            "field": 29,
+            "tires": 28,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "240",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 32,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 34,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 37,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 38,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 41,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 42,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 64,
+            "tires": 22,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "22",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 68,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 70,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 74,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 76,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 6,
+          "status": {
+            "field": 54,
+            "tires": 25,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "240",
+              "Accelerate by 240kmph",
+              "speed240.jpg"
+            ],
+            [
+              "TIRES",
+              "21",
+              "Lost 4 tires",
+              "tirecost4.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 57,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 58,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 59,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 61,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 64,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 67,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "DICE",
+                  "5",
+                  "Thrown dice result is 5",
+                  "dice5.jpg"
+                ]
+              ],
+              "amountOfReaction": 1
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 53,
+            "tires": 23,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Accelerate by 200kmph",
+              "speed200.jpg"
+            ],
+            [
+              "TIRES",
+              "21",
+              "Lost 2 tires",
+              "tirecost2.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 56,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 59,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 63,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 68,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "DICE",
+                  "2",
+                  "Thrown dice result is 2",
+                  "dice2.jpg"
+                ],
+                [
+                  "TIRES",
+                  "19",
+                  "Lost 2 tires",
+                  "tirecost2.jpg"
+                ]
+              ],
+              "amountOfReaction": 2
+            },
+            {
+              "field": 70,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 42,
+            "tires": 28,
+            "speed": 240,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "28",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 45,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 49,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 51,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 52,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "3",
+                  "Thrown dice result is 3",
+                  "dice3.jpg"
+                ],
+                [
+                  "DICE",
+                  "5",
+                  "Thrown dice result is 5",
+                  "dice5.jpg"
+                ],
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 200kmph",
+                  "speed-200.jpg"
+                ],
+                [
+                  "TIRES",
+                  "24",
+                  "Lost 4 tires",
+                  "tirecost4.jpg"
+                ]
+              ],
+              "amountOfReaction": 6
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 76,
+            "tires": 22,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "240",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "22",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 78,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 83,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "DICE",
+                  "4",
+                  "Thrown dice result is 4",
+                  "dice4.jpg"
+                ],
+                [
+                  "DICE",
+                  "4",
+                  "Thrown dice result is 4",
+                  "dice4.jpg"
+                ]
+              ],
+              "amountOfReaction": 2
+            },
+            {
+              "field": 87,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 88,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 92,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "4",
+                  "Thrown dice result is 4",
+                  "dice4.jpg"
+                ],
+                [
+                  "DICE",
+                  "2",
+                  "Thrown dice result is 2",
+                  "dice2.jpg"
+                ],
+                [
+                  "TIRES",
+                  "20",
+                  "Lost 2 tires",
+                  "tirecost2.jpg"
+                ],
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 240kmph",
+                  "speed-240.jpg"
+                ],
+                [
+                  "TIRES",
+                  "15",
+                  "Lost 5 tires",
+                  "tirecost5.jpg"
+                ]
+              ],
+              "amountOfReaction": 7
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 70,
+            "tires": 19,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "19",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 71,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 73,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 76,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 77,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 79,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 67,
+            "tires": 21,
+            "speed": 240,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "21",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 70,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 71,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 72,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 73,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 76,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 1,
+          "status": {
+            "field": 52,
+            "tires": 24,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "240",
+              "Accelerate by 240kmph",
+              "speed240.jpg"
+            ],
+            [
+              "TIRES",
+              "20",
+              "Lost 4 tires",
+              "tirecost4.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 54,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 240kmph",
+                  "speed-240.jpg"
+                ],
+                [
+                  "TIRES",
+                  "15",
+                  "Lost 5 tires",
+                  "tirecost5.jpg"
+                ]
+              ],
+              "amountOfReaction": 4
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 92,
+            "tires": 15,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Accelerate by 200kmph",
+              "speed200.jpg"
+            ],
+            [
+              "TIRES",
+              "13",
+              "Lost 2 tires",
+              "tirecost2.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 96,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 98,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 100,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 101,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 103,
+              "direction": "RIGHT",
+              "reaction": [
+                [
+                  "DICE",
+                  "4",
+                  "Thrown dice result is 4",
+                  "dice4.jpg"
+                ]
+              ],
+              "amountOfReaction": 1
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 79,
+            "tires": 19,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "19",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 80,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 81,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 82,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 84,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 76,
+            "tires": 21,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "21",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 78,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 83,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "DICE",
+                  "2",
+                  "Thrown dice result is 2",
+                  "dice2.jpg"
+                ],
+                [
+                  "TIRES",
+                  "19",
+                  "Lost 2 tires",
+                  "tirecost2.jpg"
+                ]
+              ],
+              "amountOfReaction": 2
+            },
+            {
+              "field": 87,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 88,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 92,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 200kmph",
+                  "speed-200.jpg"
+                ],
+                [
+                  "TIRES",
+                  "15",
+                  "Lost 4 tires",
+                  "tirecost4.jpg"
+                ]
+              ],
+              "amountOfReaction": 4
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 6,
+          "status": {
+            "field": 54,
+            "tires": 15,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "240",
+              "Accelerate by 240kmph",
+              "speed240.jpg"
+            ],
+            [
+              "TIRES",
+              "11",
+              "Lost 4 tires",
+              "tirecost4.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 57,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 60,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 62,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 65,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 66,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 69,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 103,
+            "tires": 13,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "13",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 106,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 109,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 112,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 115,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 117,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 92,
+            "tires": 15,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Accelerate by 200kmph",
+              "speed200.jpg"
+            ],
+            [
+              "TIRES",
+              "13",
+              "Lost 2 tires",
+              "tirecost2.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 96,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 98,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 100,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 104,
+              "direction": "RIGHT",
+              "reaction": [
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 200kmph",
+                  "speed-200.jpg"
+                ],
+                [
+                  "TIRES",
+                  "9",
+                  "Lost 4 tires",
+                  "tirecost4.jpg"
+                ]
+              ],
+              "amountOfReaction": 4
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 3,
+          "status": {
+            "field": 84,
+            "tires": 19,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "120",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "19",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 85,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 87,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 92,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 69,
+            "tires": 11,
+            "speed": 240,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "11",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 70,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 74,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "5",
+                  "Thrown dice result is 5",
+                  "dice5.jpg"
+                ]
+              ],
+              "amountOfReaction": 1
+            },
+            {
+              "field": 76,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 77,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 80,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 117,
+            "tires": 13,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "13",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 118,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 121,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 122,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 123,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 124,
+              "direction": "RIGHT",
+              "reaction": [
+                [
+                  "DICE",
+                  "5",
+                  "Thrown dice result is 5",
+                  "dice5.jpg"
+                ]
+              ],
+              "amountOfReaction": 1
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 104,
+            "tires": 9,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Accelerate by 200kmph",
+              "speed200.jpg"
+            ],
+            [
+              "TIRES",
+              "7",
+              "Lost 2 tires",
+              "tirecost2.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 106,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 108,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 111,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 112,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 113,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 3,
+          "status": {
+            "field": 92,
+            "tires": 19,
+            "speed": 120,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "120",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "19",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 96,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 98,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 100,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 80,
+            "tires": 11,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "11",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 81,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 84,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 86,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 89,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 91,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "5",
+                  "Thrown dice result is 5",
+                  "dice5.jpg"
+                ]
+              ],
+              "amountOfReaction": 1
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 124,
+            "tires": 13,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "13",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 126,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 127,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 129,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 130,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 132,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 113,
+            "tires": 7,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "7",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 116,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 118,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 119,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 121,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 100,
+            "tires": 19,
+            "speed": 120,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Accelerate by 40kmph",
+              "speed40.jpg"
+            ],
+            [
+              "TIRES",
+              "19",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 103,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 104,
+              "direction": "RIGHT",
+              "reaction": [
+                [
+                  "DICE",
+                  "5",
+                  "Thrown dice result is 5",
+                  "dice5.jpg"
+                ]
+              ],
+              "amountOfReaction": 1
+            },
+            {
+              "field": 107,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 110,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 91,
+            "tires": 11,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "11",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 94,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 97,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 98,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 100,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 103,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 200kmph",
+                  "speed-200.jpg"
+                ],
+                [
+                  "TIRES",
+                  "7",
+                  "Lost 4 tires",
+                  "tirecost4.jpg"
+                ]
+              ],
+              "amountOfReaction": 4
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 132,
+            "tires": 13,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "13",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 133,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 134,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 137,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 140,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 142,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 1,
+          "status": {
+            "field": 121,
+            "tires": 7,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "7",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 125,
+              "direction": "RIGHT",
+              "reaction": [
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 160kmph",
+                  "speed-160.jpg"
+                ],
+                [
+                  "TIRES",
+                  "4",
+                  "Lost 3 tires",
+                  "tirecost3.jpg"
+                ]
+              ],
+              "amountOfReaction": 4
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 110,
+            "tires": 19,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "19",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 112,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 113,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 115,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 117,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 103,
+            "tires": 7,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Accelerate by 160kmph",
+              "speed160.jpg"
+            ],
+            [
+              "TIRES",
+              "6",
+              "Lost 1 tires",
+              "tirecost1.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 105,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 108,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 109,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 110,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 142,
+            "tires": 13,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "13",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 143,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 147,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 148,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 153,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "6",
+                  "Thrown dice result is 6",
+                  "dice6.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "0",
+                  "Slow down by 160kmph",
+                  "speed-160.jpg"
+                ],
+                [
+                  "TIRES",
+                  "10",
+                  "Lost 3 tires",
+                  "tirecost3.jpg"
+                ]
+              ],
+              "amountOfReaction": 4
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 6,
+          "status": {
+            "field": 125,
+            "tires": 4,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "240",
+              "Accelerate by 240kmph",
+              "speed240.jpg"
+            ],
+            [
+              "TIRES",
+              "0",
+              "Lost 4 tires",
+              "tirecost4.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 127,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 130,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 132,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 135,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 138,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 139,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 3,
+          "status": {
+            "field": 117,
+            "tires": 19,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "120",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "19",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 119,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 122,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 123,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 6,
+          "status": {
+            "field": 110,
+            "tires": 6,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "240",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "6",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 112,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 114,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 115,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 117,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 119,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 122,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 4,
+          "status": {
+            "field": 153,
+            "tires": 10,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "160",
+              "Accelerate by 160kmph",
+              "speed160.jpg"
+            ],
+            [
+              "TIRES",
+              "9",
+              "Lost 1 tires",
+              "tirecost1.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 154,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 157,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 159,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 162,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 139,
+            "tires": 0,
+            "speed": 240,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "0",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 142,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 144,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 146,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 149,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 151,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "1",
+                  "Thrown dice result is 1",
+                  "dice1.jpg"
+                ],
+                [
+                  "TIRES",
+                  "-1",
+                  "Lost 1 tires",
+                  "tirecost1.jpg"
+                ],
+                [
+                  "EVENT",
+                  "-1",
+                  "Fall outOfTrack!",
+                  "falloutofthetrack.jpg"
+                ],
+                [
+                  "SPEED",
+                  "200",
+                  "Slow down by 200kmph",
+                  "speed-200.jpg"
+                ]
+              ],
+              "amountOfReaction": 4
+            }
+          ],
+          "pid": 4
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 123,
+            "tires": 19,
+            "speed": 120,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Accelerate by 80kmph",
+              "speed80.jpg"
+            ],
+            [
+              "TIRES",
+              "19",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 126,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 129,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 130,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 131,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 134,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 122,
+            "tires": 6,
+            "speed": 240,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "6",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 124,
+              "direction": "RIGHT",
+              "reaction": [
+                [
+                  "DICE",
+                  "1",
+                  "Thrown dice result is 1",
+                  "dice1.jpg"
+                ],
+                [
+                  "TIRES",
+                  "5",
+                  "Lost 1 tires",
+                  "tirecost1.jpg"
+                ]
+              ],
+              "amountOfReaction": 2
+            },
+            {
+              "field": 127,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 129,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 130,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 133,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    },
+    {
+      "players": [
+        {
+          "color": "BLUE",
+          "numberOfMoves": 3,
+          "status": {
+            "field": 162,
+            "tires": 9,
+            "speed": 160,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "120",
+              "Slow down by 40kmph",
+              "speed-40.jpg"
+            ],
+            [
+              "TIRES",
+              "9",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 165,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 168,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 171,
+              "direction": "FORWARD",
+              "reaction": [
+                [
+                  "EVENT",
+                  "-1",
+                  "Player crossed finish line",
+                  "crossedfinishline.jpg"
+                ]
+              ],
+              "amountOfReaction": 1
+            }
+          ],
+          "pid": 1
+        },
+        {
+          "color": "GREEN",
+          "numberOfMoves": 0,
+          "status": {
+            "field": 151,
+            "tires": 0,
+            "speed": 0,
+            "outOfTrack": true
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Accelerate by 200kmph",
+              "speed200.jpg"
+            ],
+            [
+              "TIRES",
+              "-2",
+              "Lost 2 tires",
+              "tirecost2.jpg"
+            ]
+          ],
+          "moves": [],
+          "pid": 4
+        },
+        {
+          "color": "RED",
+          "numberOfMoves": 5,
+          "status": {
+            "field": 134,
+            "tires": 19,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "200",
+              "Speed doesn't change",
+              "speed0.jpg"
+            ],
+            [
+              "TIRES",
+              "19",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 137,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 139,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 143,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "2",
+                  "Thrown dice result is 2",
+                  "dice2.jpg"
+                ],
+                [
+                  "TIRES",
+                  "17",
+                  "Lost 2 tires",
+                  "tirecost2.jpg"
+                ]
+              ],
+              "amountOfReaction": 2
+            },
+            {
+              "field": 147,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 148,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            }
+          ],
+          "pid": 2
+        },
+        {
+          "color": "YELLOW",
+          "numberOfMoves": 6,
+          "status": {
+            "field": 133,
+            "tires": 5,
+            "speed": 200,
+            "outOfTrack": false
+          },
+          "action": [
+            [
+              "SPEED",
+              "240",
+              "Accelerate by 40kmph",
+              "speed40.jpg"
+            ],
+            [
+              "TIRES",
+              "5",
+              "Player didn't lose any tires",
+              "tirecost0.jpg"
+            ]
+          ],
+          "moves": [
+            {
+              "field": 136,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 138,
+              "direction": "LEFT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 139,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 140,
+              "direction": "RIGHT",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 141,
+              "direction": "FORWARD",
+              "reaction": [
+                []
+              ],
+              "amountOfReaction": 0
+            },
+            {
+              "field": 142,
+              "direction": "LEFT",
+              "reaction": [
+                [
+                  "DICE",
+                  "4",
+                  "Thrown dice result is 4",
+                  "dice4.jpg"
+                ]
+              ],
+              "amountOfReaction": 1
+            }
+          ],
+          "pid": 3
+        }
+      ]
+    }
+  ]
+}

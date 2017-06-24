@@ -1,0 +1,398 @@
+<!--Tutaj trybią zajebiste zegarki-->
+
+<div id="parent-to-child-local-var">
+<countdown-parent-lv></countdown-parent-lv>
+</div>
+<a href="#top" class="to-top">Back to Top</a>
+<hr>
+
+<div id="parent-to-view-child">
+<countdown-parent-vc></countdown-parent-vc>
+</div>
+<a href="#top" class="to-top">Back to Top</a>
+<hr>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<div style="position: relative; left: 0; top: 0; width: 800px">
+  <button type="button" (click)="inc2()">INC!</button>
+  <img src="{{mapSrc}}" style="position: relative; top: 0; left: 0;"/>
+  <!--MINUS 30 JAK COŚ-->
+  <!--<img src="../app/helmet1.png" style="position: absolute; top: 871px; left: 2140px; width: 60px; height: 60px"/>-->
+  <img src="../app/helmet1.png" [ngStyle]="{'position': 'absolute', 'top':'871px', 'left':lancuch, 'width':'120px', 'height':'120px'  }"/>
+  <!--<img src="../app/graczyk2.png" [ngStyle]="{'position': 'absolute', 'top':'871', 'left':200, 'width':'200px', 'height':'200px'  }"/>-->
+</div>
+
+
+<!--<img src="{{mapSrc}}" [ngStyle]="{'position': 'realative', 'width':'30%', 'height':costam2 }" />-->
+
+
+<!--<img src="../app/staticTrackWithPoles.jpg" heigth="576" width="768"/>-->
+<!--<img src="../app/graczyk.png" heigth="10" width="10"/>-->
+
+<h1>{{title}}</h1>
+
+
+<!--<div *ngIf="tourIter < toursLength-1 && tourIter > 0">-->
+<!--Tour: {{tourIter}}-->
+<!--<button type="button" (click)="tourIterInc()">Next</button>-->
+<!--<button type="button" (click)="tourIterDec()">Previous</button>-->
+<!--</div>-->
+<!--<div *ngIf="tourIter == toursLength - 1">-->
+<!--Tour: {{tourIter}}-->
+<!--<button type="button" (click)="tourIterInc()" disabled>Next</button>-->
+<!--<button type="button" (click)="tourIterDec()">Previous</button>-->
+<!--</div>-->
+<!--<div *ngIf="tourIter == 0">-->
+<!--Tour: {{tourIter}}-->
+<!--<button type="button" (click)="tourIterInc()">Next</button>-->
+<!--<button type="button" (click)="tourIterDec()" disabled>Previous</button>-->
+<!--</div>-->
+
+<!--<div *ngIf="playerIter < playersLength-1 && playerIter > 0">-->
+<!--Player: {{playerIter}}-->
+<!--<button type="button" (click)="playerIterInc()">Next</button>-->
+<!--<button type="button" (click)="playerIterDec()">Previous</button>-->
+<!--</div>-->
+<!--<div *ngIf="playerIter == playersLength - 1">-->
+<!--Player: {{playerIter}}-->
+<!--<button type="button" (click)="playerIterInc()" disabled>Next</button>-->
+<!--<button type="button" (click)="playerIterDec()">Previous</button>-->
+<!--</div>-->
+<!--<div *ngIf="playerIter == 0">-->
+<!--Player: {{playerIter}}-->
+<!--<button type="button" (click)="playerIterInc()">Next</button>-->
+<!--<button type="button" (click)="playerIterDec()" disabled>Previous</button>-->
+<!--</div>-->
+
+<div *ngFor="let tour of tours; let tourIndex = index">
+  <div *ngIf="tourIndex == tourIter">
+
+    <table style="width:10%">
+      <tr *ngIf="tourIter < toursLength-1 && tourIter > 0">
+        <td>Tour:
+        </td>
+        <td>
+          {{tourIter}}
+        </td>
+        <td>
+          <button type="button" (click)="tourIterInc()">Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="tourIterDec()">Previous</button>
+        </td>
+      </tr>
+      <tr *ngIf="tourIter == toursLength - 1">
+        <td>Tour:
+        </td>
+        <td>
+          {{tourIter}}
+        </td>
+        <td>
+          <button type="button" (click)="tourIterInc()" disabled>Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="tourIterDec()">Previous</button>
+        </td>
+      </tr>
+      <tr *ngIf="tourIter == 0">
+        <td>Tour:
+        </td>
+        <td>
+          {{tourIter}}
+        </td>
+        <td>
+          <button type="button" (click)="tourIterInc()">Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="tourIterDec()" disabled>Previous</button>
+        </td>
+      </tr>
+
+      <tr *ngIf="playerIter < playersLength-1 && playerIter > 0">
+        <td>Player:
+        </td>
+        <td>
+          {{playerIter}}
+        </td>
+        <td>
+          <button type="button" (click)="playerIterInc()">Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="playerIterDec()">Previous</button>
+        </td>
+      </tr>
+      <tr *ngIf="playerIter == playersLength - 1">
+        <td>Player:
+        </td>
+        <td>
+          {{playerIter}}
+        </td>
+        <td>
+          <button type="button" (click)="playerIterInc()" disabled>Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="playerIterDec()">Previous</button>
+        </td>
+      </tr>
+      <tr *ngIf="playerIter == 0">
+        <td>Player:
+        </td>
+        <td>
+          {{playerIter}}
+        </td>
+        <td>
+          <button type="button" (click)="playerIterInc()">Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="playerIterDec()" disabled>Previous</button>
+        </td>
+      </tr>
+
+      <tr *ngIf="tours[tourIter].players[playerIter].numberOfMoves == 1">
+        <td>Move:
+        </td>
+        <td>{{moveIter}}</td>
+        <td>
+          <button type="button" (click)="moveIter=moveIter+1" disabled>Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="moveIter=moveIter-1" disabled>Previous</button>
+        </td>
+      </tr>
+      <tr
+        *ngIf="tours[tourIter].players[playerIter].numberOfMoves != 1 && moveIter < tours[tourIter].players[playerIter].numberOfMoves-1 && moveIter > 0">
+        <td>Move:
+        </td>
+        <td>{{moveIter}}</td>
+        <td>
+          <button type="button" (click)="moveIter=moveIter+1">Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="moveIter=moveIter-1">Previous</button>
+        </td>
+      </tr>
+      <tr
+        *ngIf="tours[tourIter].players[playerIter].numberOfMoves != 1 && moveIter == tours[tourIter].players[playerIter].numberOfMoves-1">
+        <td>Move:
+        </td>
+        <td>{{moveIter}}</td>
+        <td>
+          <button type="button" (click)="moveIter=moveIter+1" disabled>Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="moveIter=moveIter-1">Previous</button>
+        </td>
+      </tr>
+      <tr *ngIf="tours[tourIter].players[playerIter].numberOfMoves != 1 && moveIter == 0">
+        <td>Move:
+        </td>
+        <td>{{moveIter}}</td>
+        <td>
+          <button type="button" (click)="moveIter=moveIter+1">Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="moveIter=moveIter-1" disabled>Previous</button>
+        </td>
+      </tr>
+
+      <tr *ngIf="tours[tourIter].players[playerIter].moves[moveIter].amountOfReaction <= 1 && reactionIter == 0">
+        <td>Reaction:
+        </td>
+        <td>{{reactionIter}}</td>
+        <td>
+          <button type="button" (click)="reactionIter=reactionIter+1" disabled>Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="reactionIter=reactionIter-1" disabled>Previous</button>
+        </td>
+      </tr>
+      <tr
+        *ngIf="tours[tourIter].players[playerIter].moves[moveIter].amountOfReaction >= 3 && reactionIter < tours[tourIter].players[playerIter].moves[moveIter].amountOfReaction - 1 && reactionIter != 0">
+        <td>Reaction:
+        </td>
+        <td>{{reactionIter}}</td>
+        <td>
+          <button type="button" (click)="reactionIter=reactionIter+1">Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="reactionIter=reactionIter-1">Previous</button>
+        </td>
+      </tr>
+      <tr
+        *ngIf="tours[tourIter].players[playerIter].moves[moveIter].amountOfReaction >= 1 && reactionIter == tours[tourIter].players[playerIter].moves[moveIter].amountOfReaction - 1">
+        <td>Reaction:
+        </td>
+        <td>{{reactionIter}}</td>
+        <td>
+          <button type="button" (click)="reactionIter=reactionIter+1" disabled>Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="reactionIter=reactionIter-1">Previous</button>
+        </td>
+      </tr>
+      <tr *ngIf="tours[tourIter].players[playerIter].moves[moveIter].amountOfReaction >= 1 && reactionIter == 0">
+        <td>Reaction:
+        </td>
+        <td>{{reactionIter}}</td>
+        <td>
+          <button type="button" (click)="reactionIter=reactionIter+1">Next</button>
+        </td>
+        <td>
+          <button type="button" (click)="reactionIter=reactionIter-1" disabled>Previous</button>
+        </td>
+      </tr>
+
+    </table>
+
+    <table style="width:100%" border=1>
+
+      <!--Pierwszy wiersz-->
+      <tr>
+        <td>TRACK</td>
+        <td>POS.</td>
+        <td>PERSONALITY</td>
+        <td>SPEED</td>
+        <td>TIRES</td>         
+      </tr>
+
+      <!--Pierwsza kolumna, pozostałe wiersza-->
+      <tr>
+        <td rowspan="13" width="800">
+          <div style="position: relative; left: 0; top: 0;">
+            <img src="../app/staticTrackWithPoles.jpg" style="position: relative; top: 0; left: 0; width: 50%; height: 50%"/>
+            <!--MINUS 30 JAK COŚ-->
+            <img src="../app/helmet1.png" style="position: absolute; top: 871px; left: 2140px; width: 50%; height: 50%"/>
+          </div>
+          <!--<img src="../app/staticTrackWithPoles.jpg" heigth="576" width="768"/>-->
+          <!--<img src="../app/graczyk.png" heigth="10" width="10"/>-->
+        </td>
+      </tr>
+
+      <!--Wypisanie wartości do tablicy-->
+      <tr>
+        <td>
+          <b>1</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[0].color}} {{tours[tourIndex].players[0]?.personality}}</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[0].status.speed}}</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[0].status.tires}}</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Action:</b>
+          <div *ngIf="playerIter>=0">
+            {{tours[tourIter].players[0].action[0][2]}}
+            {{tours[tourIter].players[0].action[1][2]}}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Reaction:</b>
+        <div *ngIf="playerIter==0">
+          {{tours[tourIter].players[playerIter].moves[moveIter].reaction[reactionIter][2]}}
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>2</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[1].color}} {{tours[tourIndex].players[1]?.personality}}</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[1].status.speed}}</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[1].status.tires}}</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Action:</b>
+          <div *ngIf="playerIter>=1">
+            {{tours[tourIter].players[1].action[0][2]}}
+            {{tours[tourIter].players[1].action[1][2]}}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Reaction:</b>
+          <div *ngIf="playerIter==1">
+            {{tours[tourIter].players[playerIter].moves[moveIter].reaction[reactionIter][2]}}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>3</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[2].color}} {{tours[tourIndex].players[2]?.personality}}</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[2].status.speed}}</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[2].status.tires}}</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Action:</b>
+          <div *ngIf="playerIter>=2">
+            {{tours[tourIter].players[2].action[0][2]}}
+            {{tours[tourIter].players[2].action[1][2]}}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Reaction:</b>
+          <div *ngIf="playerIter==2">
+            {{tours[tourIter].players[playerIter].moves[moveIter].reaction[reactionIter][2]}}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!--<div *ngFor="let el of RobArray">{{tours[0].players[RobArray[el]].color}}</div>-->
+          <b>4</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[3].color}} {{tours[tourIndex].players[3]?.personality}}</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[3].status.speed}}</b>
+        </td>
+        <td>
+          <b>{{tours[tourIndex].players[3].status.tires}}</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Action:</b>
+          <div *ngIf="playerIter>=3">
+            {{tours[tourIter].players[3].action[0][2]}}
+            {{tours[tourIter].players[3].action[1][2]}}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Reaction:</b>
+          <div *ngIf="playerIter==3">
+            {{tours[tourIter].players[playerIter].moves[moveIter].reaction[reactionIter][2]}}
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+<div>
+  <button type="button" (click)="inc()">Next</button>
+  {{reactionIterPlayer0}}
+</div>
